@@ -1,0 +1,18 @@
+<form class="task-form task">
+  <input type="text" name="title" placeholder="Task title here..." autocomplete="off" value="<%= data.title %>" />
+  <div class="hidden details">
+    <textarea name="description" placeholder="Task description here..."><%= data.description %></textarea>
+    <input name="from" class="datepicker" placeholder="Date from..." autocomplete="off" value="<%= data.from %>" />
+    <input name="to" class="datepicker" placeholder="Due date..." autocomplete="off" value="<%= data.to %>" />
+    <select name="priority" value="<%= data.priority %>">
+      <option value="CRITICAL">Critical</option>
+      <option value="HIGH">High</option>
+      <option value="MEDIUM">Medium</option>
+      <option value="LOW">Low</option>
+    </select>
+    <div class="buttons">
+      <button class="btn" name="close">Close</button>
+      <button class="btn btn-primary" name="save">Save</button>
+    </div>
+  </div>
+</form>

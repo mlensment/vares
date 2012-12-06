@@ -1,0 +1,23 @@
+<div class="task">
+  <ol>
+    <li><%= title %></li>
+  </ol>
+  <div class="description">
+    <%= description %>
+  </div>
+  
+  <div class="show-description">
+    <span class="arrow">
+      &laquo;
+    </span>
+  </div>
+
+  <div class="footer">
+    <div class="left">
+      Priority: <%= priority %> / <%= from %> / <%= to %>
+    </div>
+    <div class="right">
+      Status: <span class="<%= statusStyle %>"><%= status %></span>
+    </div>
+  </div>
+</div>
