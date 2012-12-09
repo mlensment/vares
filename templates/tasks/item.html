@@ -1,23 +1,48 @@
-<div class="task">
-  <ol>
-    <li><%= title %></li>
-  </ol>
-  <div class="description">
-    <%= description %>
-  </div>
-  
-  <div class="show-description">
-    <span class="arrow">
-      &laquo;
-    </span>
+<div class="comment">I added this
+</div>
+
+<img src="img/comment-arrow.png" alt="arrow" class="comment-arrow" />
+
+<div class="container" style="overflow: auto;">
+    
+
+  <div class="avatar">
+    <img src="img/avatar_50x50.png" alt="avatar" /><br />
   </div>
 
-  <div class="footer">
-    <div class="left">
-      Priority: <%= priority %> / <%= from %> / <%= to %>
+  <table>
+    <tr>
+      <td>
+        <%= title %>
+        <div class="description">asdf</div>
+      </td>
+      <td rowspan="2" class="show-description">
+        <span class="arrow">
+          <!-- &laquo; -->
+          &raquo;
+        </span>
+      </td>
+    </tr>
+    <tr class="footer">
+      <td>Priority: <%= priority %> / <%= from %> / <%= to %></td>
+    </tr>
+  </table>
+
+  <!-- <div class="content">
+    <ol>
+      <li><%= title %></li>
+    </ol>
+    <div class="description">
+      <%= description %>
     </div>
-    <div class="right">
-      Status: <span class="<%= statusStyle %>"><%= status %></span>
+
+    <div class="footer">
+      <div class="left">
+        Priority: <%= priority %> / <%= from %> / <%= to %>
+      </div>
+      <div class="right">
+        Status: <span class="<%= statusStyle %>"><%= status %></span>
+      </div>
     </div>
-  </div>
+  </div> -->
 </div>

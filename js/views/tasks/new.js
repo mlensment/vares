@@ -1,6 +1,6 @@
 define(['collections/tasks', 'text!templates/tasks/form.html'], function(Tasks, taskFormTemplate) {
   return new (Backbone.View.extend({
-    el: $('#new-task'),
+    el: $('#left .top'),
     template: _.template(taskFormTemplate, {data: {}}),
     events: {
       'keyup [name="title"]': 'toggleForm',

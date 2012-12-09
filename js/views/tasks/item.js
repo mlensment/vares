@@ -1,5 +1,6 @@
 define(['text!templates/tasks/item.html', 'text!templates/tasks/form.html'], function(taskTemplate, taskFormTemplate) {
   return Backbone.View.extend({
+    className: "task",
     template: _.template(taskTemplate),
     formTemplate: _.template(taskFormTemplate),
     events: {
@@ -15,17 +16,17 @@ define(['text!templates/tasks/item.html', 'text!templates/tasks/form.html'], fun
       var params = this.model.toJSON();
       params.statusStyle = params.statusCode.toLowerCase();
       this.$el.html(this.template(params));
-      this.$(".task").draggable();
       return this;
     },
     toggleDescription: function(event) {
       var visible = this.$('.description').is(':visible');
+      // this.$('.arrow').toggleClass('arrow-inverted', !visible);
       if(visible) {
         this.$('.description').hide();
-        this.$('.arrow').css('transform', 'rotate(-90deg)');
+        this.$('.arrow').html('&raquo;');
       } else {
         this.$('.description').show();
-        this.$('.arrow').css('transform', 'rotate(90deg)');
+        this.$('.arrow').html('&laquo;');
       }
     },
     toggleForm: function() {

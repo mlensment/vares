@@ -1,6 +1,6 @@
 define(['collections/tasks', 'views/tasks/item'], function(Tasks, TaskView) {
   var TaskList = Backbone.View.extend({
-    el: $('#existing-tasks'),
+    el: $('#left .middle'),
     initialize: function() {
       Tasks.bind('add', this.addOne, this);
     },
