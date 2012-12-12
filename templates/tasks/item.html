@@ -1,11 +1,9 @@
-<div class="comment">I added this
+<div class="comment"><%= comment %>
 </div>
 
 <img src="img/comment-arrow.png" alt="arrow" class="comment-arrow" />
 
-<div class="container" style="overflow: auto;">
-    
-
+<div class="container">
   <div class="avatar">
     <img src="img/avatar_50x50.png" alt="avatar" /><br />
   </div>
@@ -14,7 +12,7 @@
     <tr>
       <td>
         <%= title %>
-        <div class="description">asdf</div>
+        <div class="description"><%= description %></div>
       </td>
       <td rowspan="2" class="show-description">
         <span class="arrow">
@@ -27,22 +25,4 @@
       <td>Priority: <%= priority %> / <%= from %> / <%= to %></td>
     </tr>
   </table>
-
-  <!-- <div class="content">
-    <ol>
-      <li><%= title %></li>
-    </ol>
-    <div class="description">
-      <%= description %>
-    </div>
-
-    <div class="footer">
-      <div class="left">
-        Priority: <%= priority %> / <%= from %> / <%= to %>
-      </div>
-      <div class="right">
-        Status: <span class="<%= statusStyle %>"><%= status %></span>
-      </div>
-    </div>
-  </div> -->
 </div>

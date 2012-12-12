@@ -10,7 +10,7 @@ body {
   font-family: 'Maven Pro', sans-serif;
   font-weight: 500;
   /* POTENTIAL PERFORMANCE BLOCKER */
-  box-shadow: 0 0 500px rgba(120, 207, 252, 0.3) inset;
+  box-shadow: 0 0 500px rgba(120, 207, 252, 0.5) inset;
 }
 
 #app-container {
@@ -120,7 +120,7 @@ h1 {
 
 .task table {
   width: 100%;
-  width: -webkit-calc(100% - 55px);  
+  width: -webkit-calc(100% - 55px);
   width:         calc(100% - 55px);
   height: 50px;
   background: white;
